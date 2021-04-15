@@ -1,0 +1,101 @@
+
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap')
+
+// font-family: "Open Sans", sans-sefif
+// font-family: 'Open Sans', sans-serif
+// font-family: 'Roboto', sans-serif
+
+$regular: 'OpenSans-Regular', sans-serif
+$bold: 'OpenSans', sans-serif
+$text: 'OpenSans-Light', sans-serif
+
+$black: #000
+$gray: #EDEDED
+$white: #fff
+
+@mixin box-shadow
+	box-shadow: 0 0 5px rgba(0,0,0,0.5)
+
+*
+	margin: 0
+	padding: 0
+	font-family: $text
+
+button, input, textarea, select
+	&:active, &:focus, &:hover, &.form-control, &.navbar-toggler
+		outline: none!important 
+
+html, body
+	width: 100%
+	background-color: #141414!important
+	overflow-x: hidden
+
+@mixin flex-column
+	display: flex 
+	align-items: center 
+	flex-direction: column
+
+@mixin align-items-center
+	display: flex 
+	align-items: center
+
+@mixin justify-content-center
+	display: flex 
+	align-items: center
+	justify-content: center
+
+@mixin justify-content-between
+	display: flex 
+	align-items: center
+	justify-content: space-between
+
+@mixin justify-content-around
+	display: flex 
+	align-items: center
+	justify-content: space-around
+
+@mixin flex-wrap
+	display: flex 
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+
+footer
+	padding-top: 1rem
+	padding-bottom: 1rem
+	background: #000
+	p 
+		margin-bottom: 0
+		color: #6d6d6d
+		font-size: 14px
+		font-family: $text
+		&:last-of-type
+			font-size: 14px
+		a
+			font-size: 12px
+			font-family: $text
+			cursor: pointer
+			outline: none !important
+			color: #6d6d6d
+			text-decoration: none !important
+			&:hover
+				color: #6d6d6d
+
+
+.btn
+	outline: none!important
+	box-shadow: none
+	background: #0DC78F
+	border-radius: 5px
+	color: #fff
+	border: none!important
+	font-size: 16px
+	cursor: pointer
+	padding: 12px 22px
+	font-weight: 600
+	font-family: $text
+	&:hover
+		color: #fff
+		background: #157347
+	&:focus
+		box-shadow: none

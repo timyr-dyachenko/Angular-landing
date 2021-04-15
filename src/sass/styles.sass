@@ -1,0 +1,239 @@
+@import './common-multiuse'
+
+h1
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 2.6em
+	line-height: 71px
+	text-align: center
+h1, h2
+	font-family: "Open Sans"!important
+	font-size: 51px
+	color: $white!important
+h2
+	font-size: 40px
+	font-weight: 600
+	line-height: 54px
+	margin-bottom: 52px
+h3
+	color: $white
+	font-family: "Open Sans"
+	font-style: normal
+	font-weight: 300
+	font-size: 35px
+	line-height: 48px
+	text-align: center
+
+section
+	padding: 100px 0
+	@media screen and (max-width: 992px)
+		padding: 50px 0
+
+.navbar
+	.container-lg
+		position: relative
+.nav-link
+	color: #fff!important
+	&:hover
+		color:#0DC78F!important
+.download-icon
+	display: none
+.custom-header
+	background-color: #1d1c1c
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	transition: .3s
+	box-shadow: 1px 1px 20px 2px #1d1c1c
+	.download-icon
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		right: 26%
+		top: 0
+		height: 100%
+		transition: .3s
+		@media screen and (max-width:992px)
+			display: none
+		img
+			width: 30px
+
+.bg-header
+	background: url('../assets/img/bg-img.jpg') no-repeat center/cover
+	min-height: 100vh
+	justify-content: space-around
+	align-items: center
+	h2
+		color: #f7f3f2!important
+	h3
+		font-weight: bold
+		font-size: 18px
+		line-height: 25px
+		text-align: center
+		text-transform: uppercase
+		color: #FFFFFF
+	&__image
+		display: block
+		width: 100%
+		height: 100%
+		margin-bottom: 19px
+		@media screen and (min-width:992px)
+			display: none
+	@media screen and (max-width:992px)
+		background: none
+		justify-content: flex-start
+		min-height: auto
+		h1
+			font-size: 24px
+		main
+			margin-top: 56px
+			display: flex
+			justify-content: flex-start
+			flex-direction: column
+
+.share-store
+	h2
+		font-family: "Roboto"
+		font-weight: 300
+		font-size: 24px
+		line-height: 24px
+		text-align: center
+		color: #F7F3F2
+		@media screen and (max-width: 992px)
+			font-size: 18px
+	h3
+		line-height: 25px
+		color: #FBFBFB
+	img
+		display: block
+		margin: 0 auto
+		width: 100%
+		max-width: 250px
+		margin-right: 0
+		@media screen and (max-width: 992px) 
+			display: none
+	svg
+		display: none
+		@media screen and (max-width: 992px) 
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: auto
+
+.carousel-text
+	&__item
+		font-family: "Open Sans"
+		color: #FBFBFB
+		font-weight: 300
+		font-size: 35px
+		@media screen and (max-width:992px)
+			font-size: 24px
+	.carousel-caption
+		position: relative!important
+		float: none!important
+		margin: 0 auto!important
+		width: 70%!important
+		padding: 0
+		left: auto
+		right: auto
+		top: auto
+		bottom: auto
+		span
+			font-style: italic
+			font-size: 18px
+			line-height: 34px
+			font-weight: 300
+		p
+			font-size: 14px
+			line-height: 19px
+			letter-spacing: 0.401333px
+	.carousel-control-next-icon, .carousel-control-prev-icon
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJSSURBVHgB3ZqBcdpAEEW/qEDpQKrAuIJACenAHcQdEFdgOjCpwEkFkAoiV6DrwHSw2S/dEcGAw5DbQ8ebWcQgBt1n9/ZWeyoQCRGp9DBTu/PHcmAB561Re1PbFEXhcG108KXaQq2Vy2nVnv0fkVzATG0t8XlJIogXUXsVe17MBOkPf1V7l3S0ag+IifQxfC2ezxlj8Q8BzDhrtSmuC7PcXDPc9tQXTgoZkYjAh2I+EvIb4xERaFTI/bETk2Mf+rgcmwgyPXfOUMSDjJ/Hw3EXByIq9POiwrjhPLkfljeHobXA+EUQJqK9ENt5xHujRV4wi234ZuiRBfJjN+bOI5l6I/CJa0vwyCPypRt78Ai9USFPnHqkLozCqvbHVKm8YmjNEJ/S5/g5+ltba+YUYlGK8OarSihmSiF3iE+ltk4o5vMEdjFcIZ2YkpNdYItDvwI7w1pum0IIcWpfVExjtfhOkIYSxlDIFrY49CV3Mwit6FgLcbCfH911LIU4pBHRXYtCfiE+DulEkDcKaRCflCJIY1k0MlO9Ik3RWN9MGR/Wke/Il598CR5hGLwjT2rOx84jvp+6QX6sQm9r2A6awWjVNaQOQna1lu8P/UA+rIadxmMtU3bhzYu8/8TBr1Xhg73q1594wvh5OmtbWz2zlPGyPDbm297o8fAe26IOu5Ru6+3UyZvZDD0Lue6cWSIm0m/JtZIOPpxg01yX/hGOldjTdSphjaGgtfSlUlq8IM6fVi6nVfsmfWK5mAKRkL8PnjHDsZ9cYf9mbTsw9gmYiaI9ePYH7SwmdzLt7tYAAAAASUVORK5CYII=')
+	.carousel-control-prev-icon
+		transform: rotate(0.5turn)
+	.carousel-control-next, .carousel-control-prev
+		opacity: 1
+	@media screen and (max-width:767px)
+		.d-none
+			display: block!important
+
+.people-block
+	position: relative
+	h3
+		margin-bottom: 71px
+	img
+		object-fit: cover
+	&__list
+		display: flex
+		margin-top: 30px
+		&-img
+			width: 100%
+			max-width: 60%
+			position: absolute
+			right: -20%
+			top: 0
+			bottom: 0
+			object-fit: cover
+			height: 100%
+			@media screen and (max-width: 992px)
+				position: relative
+				min-width: 130%
+				left: 0
+				max-height: 270px
+		img
+			width: 47px	
+			height: 47px
+			margin-right: 21px
+			border-radius: 50%
+			display: block
+		span
+			color: #FBFBFB
+			font-size: 22px
+			font-family: "Roboto"
+			line-height: 26px
+			@media screen and (max-width: 992px)
+				font-size: 20px
+		p
+			margin-top: 20px
+			font-size: 17px
+			color: #adadad
+			font-weight: 300
+			font-size: 17px
+			line-height: 23px
+
+.p-b__revers
+	.people-block__list
+		margin-left: auto
+		&-img
+			left: 0
+			width: 100%
+			right: 0
+			min-width: 45%
+			max-width: 45%
+			@media screen and (max-width: 992px)
+				max-width: 100%
+
+/* media queries start */
+
+@media only screen and (max-width: 992px)
+	h1, h2, h3
+		line-height: 32px
+		text-align: left!important
+		margin-bottom: 30px!important
+	h2
+		font-size: 24px
+	#app-download
+		h3
+			font-weight: 300
+			font-size: 18px
+	.navbar
+		background: #1d1c1c!important
+		.navbar-toggler
+			outline: none!important
+			svg
+				height: 30px
+				width: auto
+
+

@@ -1,0 +1,5 @@
+
+node_modules/
+package-lock.json
+src/app/old-app
+src/assets/img/mobile-phone.jpg
